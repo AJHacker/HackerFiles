@@ -1,0 +1,304 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5FC5CCEC16DD715A005A290D /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FC5CCEB16DD715A005A290D /* Cocoa.framework */; };
+		5FC5CCEE16DD715A005A290D /* ScreenSaver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FC5CCED16DD715A005A290D /* ScreenSaver.framework */; };
+		5FC5CCF816DD715A005A290D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5FC5CCF616DD715A005A290D /* InfoPlist.strings */; };
+		5FC5CCFC16DD715A005A290D /* hackerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FC5CCFB16DD715A005A290D /* hackerView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5FC5CCE816DD715A005A290D /* hacker.saver */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = hacker.saver; sourceTree = BUILT_PRODUCTS_DIR; };
+		5FC5CCEB16DD715A005A290D /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		5FC5CCED16DD715A005A290D /* ScreenSaver.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ScreenSaver.framework; path = System/Library/Frameworks/ScreenSaver.framework; sourceTree = SDKROOT; };
+		5FC5CCF016DD715A005A290D /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		5FC5CCF116DD715A005A290D /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		5FC5CCF216DD715A005A290D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		5FC5CCF516DD715A005A290D /* hacker-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "hacker-Info.plist"; sourceTree = "<group>"; };
+		5FC5CCF716DD715A005A290D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5FC5CCF916DD715A005A290D /* hacker-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "hacker-Prefix.pch"; sourceTree = "<group>"; };
+		5FC5CCFA16DD715A005A290D /* hackerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = hackerView.h; sourceTree = "<group>"; };
+		5FC5CCFB16DD715A005A290D /* hackerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = hackerView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5FC5CCE316DD715A005A290D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5FC5CCEC16DD715A005A290D /* Cocoa.framework in Frameworks */,
+				5FC5CCEE16DD715A005A290D /* ScreenSaver.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5FC5CCDB16DD715A005A290D = {
+			isa = PBXGroup;
+			children = (
+				5FC5CCF316DD715A005A290D /* hacker */,
+				5FC5CCEA16DD715A005A290D /* Frameworks */,
+				5FC5CCE916DD715A005A290D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5FC5CCE916DD715A005A290D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5FC5CCE816DD715A005A290D /* hacker.saver */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5FC5CCEA16DD715A005A290D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5FC5CCEB16DD715A005A290D /* Cocoa.framework */,
+				5FC5CCED16DD715A005A290D /* ScreenSaver.framework */,
+				5FC5CCEF16DD715A005A290D /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5FC5CCEF16DD715A005A290D /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5FC5CCF016DD715A005A290D /* AppKit.framework */,
+				5FC5CCF116DD715A005A290D /* CoreData.framework */,
+				5FC5CCF216DD715A005A290D /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		5FC5CCF316DD715A005A290D /* hacker */ = {
+			isa = PBXGroup;
+			children = (
+				5FC5CCFA16DD715A005A290D /* hackerView.h */,
+				5FC5CCFB16DD715A005A290D /* hackerView.m */,
+				5FC5CCF416DD715A005A290D /* Supporting Files */,
+			);
+			path = hacker;
+			sourceTree = "<group>";
+		};
+		5FC5CCF416DD715A005A290D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5FC5CCF516DD715A005A290D /* hacker-Info.plist */,
+				5FC5CCF616DD715A005A290D /* InfoPlist.strings */,
+				5FC5CCF916DD715A005A290D /* hacker-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		5FC5CCE416DD715A005A290D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		5FC5CCE716DD715A005A290D /* hacker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5FC5CCFF16DD715A005A290D /* Build configuration list for PBXNativeTarget "hacker" */;
+			buildPhases = (
+				5FC5CCE216DD715A005A290D /* Sources */,
+				5FC5CCE316DD715A005A290D /* Frameworks */,
+				5FC5CCE416DD715A005A290D /* Headers */,
+				5FC5CCE516DD715A005A290D /* Resources */,
+				5FC5CCE616DD715A005A290D /* Rez */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = hacker;
+			productName = hacker;
+			productReference = 5FC5CCE816DD715A005A290D /* hacker.saver */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5FC5CCDD16DD715A005A290D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = AJcoder;
+			};
+			buildConfigurationList = 5FC5CCE016DD715A005A290D /* Build configuration list for PBXProject "hacker" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 5FC5CCDB16DD715A005A290D;
+			productRefGroup = 5FC5CCE916DD715A005A290D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5FC5CCE716DD715A005A290D /* hacker */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5FC5CCE516DD715A005A290D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5FC5CCF816DD715A005A290D /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXRezBuildPhase section */
+		5FC5CCE616DD715A005A290D /* Rez */ = {
+			isa = PBXRezBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXRezBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5FC5CCE216DD715A005A290D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5FC5CCFC16DD715A005A290D /* hackerView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		5FC5CCF616DD715A005A290D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5FC5CCF716DD715A005A290D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5FC5CCFD16DD715A005A290D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_ENABLE_OBJC_GC = supported;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		5FC5CCFE16DD715A005A290D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_ENABLE_OBJC_GC = supported;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		5FC5CD0016DD715A005A290D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "hacker/hacker-Prefix.pch";
+				INFOPLIST_FILE = "hacker/hacker-Info.plist";
+				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = saver;
+			};
+			name = Debug;
+		};
+		5FC5CD0116DD715A005A290D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "hacker/hacker-Prefix.pch";
+				INFOPLIST_FILE = "hacker/hacker-Info.plist";
+				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = saver;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5FC5CCE016DD715A005A290D /* Build configuration list for PBXProject "hacker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5FC5CCFD16DD715A005A290D /* Debug */,
+				5FC5CCFE16DD715A005A290D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5FC5CCFF16DD715A005A290D /* Build configuration list for PBXNativeTarget "hacker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5FC5CD0016DD715A005A290D /* Debug */,
+				5FC5CD0116DD715A005A290D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5FC5CCDD16DD715A005A290D /* Project object */;
+}
