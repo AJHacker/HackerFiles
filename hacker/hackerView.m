@@ -36,7 +36,7 @@
 
 - (void)animateOneFrame
 {
-    return;
+
 }
 
 - (BOOL)hasConfigureSheet
